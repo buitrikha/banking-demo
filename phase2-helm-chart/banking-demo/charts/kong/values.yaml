@@ -1,6 +1,6 @@
 # ArgoCD/Helm merge theo key kong
 kong:
-  fullnameOverride: kong
+  fullnameOverride: kong-proxy-ext #kong
   enabled: true
   image:
     repository: kong

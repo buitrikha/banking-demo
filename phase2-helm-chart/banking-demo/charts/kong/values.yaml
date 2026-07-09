@@ -1,6 +1,6 @@
 # ArgoCD/Helm merge theo key kong
 kong:
-  fullnameOverride: kong-proxy-ext #kong
+  fullnameOverride: kong
   enabled: true
   image:
     repository: kong
@@ -10,7 +10,7 @@ kong:
   replicas: 1
   proxyPort: 8000
   adminPort: 8001
-  proxyPortName: proxy
+  proxyPortName: proxygit
   adminPortName: admin
   configMountPath: /kong
   configFileName: kong.yml

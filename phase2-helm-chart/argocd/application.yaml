@@ -26,6 +26,20 @@ spec:
         - charts/transfer-service/values.yaml
         - charts/notification-service/values.yaml
         - charts/frontend/values.yaml
+      # THÊM HOẶC SỬA BLOCK NÀY VÀO ĐÂY:
+      values: |
+        notification-service:
+          rabbitmq:
+            enabled: false
+        transfer-service:
+          rabbitmq:
+            enabled: false
+        auth-service:
+          rabbitmq:
+            enabled: false
+        account-service:
+          rabbitmq:
+            enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: banking

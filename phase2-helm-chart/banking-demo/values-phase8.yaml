@@ -4,7 +4,7 @@
 
 # 1. API Producer (RabbitMQ deploy riêng ns rabbit)
 api-producer:
-  enabled: true
+  enabled: false
   image:
     repository: registry.gitlab.com/kiettt164/banking-demo-payment/api-producer
     tag: latest  # CI cập nhật khi push phase8-application-v3/producer
